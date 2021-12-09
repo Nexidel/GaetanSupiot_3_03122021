@@ -1,0 +1,19 @@
+{
+    "name": "gaetansupiot_3_03122021",
+    "version": "1.0.0",
+    "description": "Projet3",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nexidel/GaetanSupiot_3_03122021.git"
+    },
+    "author": "gaetan supiot",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Nexidel/GaetanSupiot_3_03122021/issues"
+    },
+    "homepage": "https://github.com/Nexidel/GaetanSupiot_3_03122021#readme"
+}
