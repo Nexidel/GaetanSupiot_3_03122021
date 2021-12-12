@@ -1,3 +1,103 @@
+body {
+  font-family: "Roboto";
+}
 
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Shrikhand";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.footer-color {
+  background-color: #353535;
+}
+
+.footer h3 {
+  padding: 1.3rem 0 0 1.5rem;
+  margin: 0;
+  color: white;
+  font-weight: normal;
+}
+.footer .footer__field {
+  font-weight: lighter;
+  padding: 1rem 0 2rem 1.5rem;
+  color: rgba(245, 245, 245, 0.842);
+  font-size: medium;
+  line-height: 1.6rem;
+  list-style: none;
+  text-decoration: none;
+}
+.footer .footer__field i {
+  width: 1.8rem;
+}
+.footer .footer__field .footer__field--bold {
+  color: white;
+}
+.footer .footer__field a {
+  color: rgba(245, 245, 245, 0.842);
+}
+
+.pink-btn {
+  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  color: white;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: none;
+  padding: 1rem;
+  box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.48);
+}
+.pink-btn span {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  color: black;
+  font-weight: 300;
+}
+header .header__location {
+  background-color: #eaeaea;
+  box-shadow: inset 0 2px #d6d6d6;
+}
+header .header__location .header__location--text {
+  font-weight: bold;
+  color: #313030;
+  width: 90%;
+  padding: 1rem 0 1rem 0;
+}
+header .header__location .header__location--text span {
+  padding: 0 1rem 0 1rem;
+}
+header .header__description {
+  background-color: #f6f6f6;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+header .header__description p {
+  font-size: 1.3rem;
+  color: rgba(37, 36, 36, 0.664);
+}
 
 /*# sourceMappingURL=style.css.map */
