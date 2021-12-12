@@ -22,88 +22,94 @@
 </head>
 
 <body>
-    <header>
-        <h1><img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood"></h1>
-        <section>
-            <div><i class="fas fa-search"></i>Paris, Belleville</div>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button type="button">Explorer nos restaurants</button>
-        </section>
-        <section>
-            <h2>Fonctionnement</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant
-                    </li>
-                    <li>
-                        <span>2</span><i class="fas fa-list-ul"></i>Composez votre menu
-                    </li>
-                    <li>
-                        <span>3</span><i class="fas fa-store"></i>Dégustez au restaurant
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-
-    <main>
-        <section>
-            <form class="restaurants">
-                <div class="cardRestaurants">
-                    <a href="./pages/lapalettedugout.html">
-                        <img src="./images/restaurants/LaPaletteDuGout.jpg" alt="La palette du goût">
-                        <P>Ménilmontant</P>
-                        <i class="far fa-heart"></i>
-                        <!-- Faire animation cœur plus tard CSS -->
-                        <!-- Label et Input en dehors des <a> -->
-                    </a>
-                </div>
-                <div class="cardRestaurants">
-                    <a href="./pages/lanoteenchantee.html">
-                        <img src="./images/restaurants/LaNoteEnchantee.jpg" alt="La note enchantée">
-                        <p>Charonne</p>
-                        <i class="fas fa-heart"></i>
-                        <!-- Faire animation cœur plus tard CSS -->
-                        <!-- Label et Input en dehors des <a> -->
-                    </a>
-                </div>
-                <div class="cardRestaurants">
-                    <a href="./pages/alafrancaise.html">
-                        <img src="./images/restaurants/ALaFrancaise.jpg" alt="À la française">
-                        <p>Cité Rouge</p>
-                        <i class="far fa-heart"></i>
-                        <!-- Faire animation cœur plus tard CSS -->
-                        <!-- Label et Input en dehors des <a> -->
-                    </a>
-                </div>
-                <div class="cardRestaurants">
-                    <a href="./pages/ledelicedessens.html">
-                        <img src="./images/restaurants/LeDeliceDesSens.jpg" alt="Le Délice des sens">
-                        <p>Folie-Méricourt</p>
-                        <i class="far fa-heart"></i>
-                        <!-- Faire animation cœur plus tard CSS -->
-                        <!-- Label et Input en dehors des <a> -->
-                    </a>
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer-color">
-        <div class="footer">
+    <div class="container">
+        <header class="header">
+            <h1><a>ohmyfood</a></h1>
             <section>
-                <h3>ohmyfood</h3>
-                <ul class="footer__field">
-                    <li class="footer__field--bold"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                    <li class="footer__field--bold"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-                    <li>Mentions légales</li>
-                    <li><a href="mailto:votreadresse@mail.fr">Contact</a></li>
-                </ul>
+                <div class="header__location">
+                    <div class="header__location--text"><span><i class="fas fa-map-marker-alt"></i></span>Paris, Belleville</div>
+                </div>
+                <div class="header__description">
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <button class="pink-btn" type="button"><span>Explorer nos restaurants</span></button>
+                </div>
             </section>
-        </div>
-    </footer>
+            <section>
+                <h2>Fonctionnement</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant
+                        </li>
+                        <li>
+                            <span>2</span><i class="fas fa-list-ul"></i>Composez votre menu
+                        </li>
+                        <li>
+                            <span>3</span><i class="fas fa-store"></i>Dégustez au restaurant
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <section>
+                <form class="restaurants">
+                    <div class="cardRestaurants">
+                        <a href="./pages/lapalettedugout.html">
+                            <img src="./images/restaurants/LaPaletteDuGout.jpg" alt="La palette du goût">
+                            <P>Ménilmontant</P>
+                            <i class="far fa-heart"></i>
+                            <!-- Faire animation cœur plus tard CSS -->
+                            <!-- Label et Input en dehors des <a> -->
+                        </a>
+                    </div>
+                    <div class="cardRestaurants">
+                        <a href="./pages/lanoteenchantee.html">
+                            <img src="./images/restaurants/LaNoteEnchantee.jpg" alt="La note enchantée">
+                            <p>Charonne</p>
+                            <i class="fas fa-heart"></i>
+                            <!-- Faire animation cœur plus tard CSS -->
+                            <!-- Label et Input en dehors des <a> -->
+                        </a>
+                    </div>
+                    <div class="cardRestaurants">
+                        <a href="./pages/alafrancaise.html">
+                            <img src="./images/restaurants/ALaFrancaise.jpg" alt="À la française">
+                            <p>Cité Rouge</p>
+                            <i class="far fa-heart"></i>
+                            <!-- Faire animation cœur plus tard CSS -->
+                            <!-- Label et Input en dehors des <a> -->
+                        </a>
+                    </div>
+                    <div class="cardRestaurants">
+                        <a href="./pages/ledelicedessens.html">
+                            <img src="./images/restaurants/LeDeliceDesSens.jpg" alt="Le Délice des sens">
+                            <p>Folie-Méricourt</p>
+                            <i class="far fa-heart"></i>
+                            <!-- Faire animation cœur plus tard CSS -->
+                            <!-- Label et Input en dehors des <a> -->
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer-color">
+            <div class="footer">
+                <section>
+                    <h3>ohmyfood</h3>
+                    <ul class="footer__field">
+                        <li class="footer__field--bold"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                        <li class="footer__field--bold"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                        <li>Mentions légales</li>
+                        <li><a href="mailto:votreadresse@mail.fr">Contact</a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
