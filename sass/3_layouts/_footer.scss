@@ -9,7 +9,7 @@
         color: white;
         font-weight: normal;
     }
-    .footer__field {
+    &__field {
         font-weight: lighter;
         padding: 1rem 0 2rem 1.5rem;
         color: rgba(245, 245, 245, 0.842);
@@ -20,7 +20,7 @@
         i {
             width: 1.8rem;
         }
-        .footer__field--bold {
+        &--bold {
             color: white;
         }
         a {
