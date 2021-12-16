@@ -1,12 +1,9 @@
-.pink-btn {
+@mixin pink-btn {
     background: linear-gradient($secondary-color 0%, $primary-color 100%);
     color: white;
     font-size: 1rem;
     border-radius: 3rem;
     border: none;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     box-shadow: 2px 5px 10px 1px rgb(141 133 133 / 48%);
-    span {
-        padding: 0 .5rem 0 .5rem;
-    }
 }
