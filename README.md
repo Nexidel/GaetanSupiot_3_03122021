@@ -3,5 +3,4 @@
 Projet OpenClassrooms 3
 
 Dynamisez une page web avec des animations CSS
-
-Date de début : 03/12/2021
+<br />Date de début : 03/12/2021
