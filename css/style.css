@@ -124,9 +124,16 @@ img {
 .navigation h2 {
   padding: 2.5rem 0 0 1.3rem;
 }
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .navigation ul li {
   margin: 2rem;
   display: flex;
+  max-width: 350px;
+  width: 100%;
   background-color: #F6F6F6;
   border-radius: 25px;
   box-shadow: 1px 6px 15px -5px rgba(141, 133, 133, 0.48);
@@ -144,7 +151,7 @@ img {
   width: 25px;
   position: absolute;
   top: 1.25rem;
-  left: -0.6em;
+  left: -0.75em;
 }
 .navigation ul li .fas {
   color: grey;
@@ -187,8 +194,6 @@ img {
   border-radius: 1rem 1rem 0 0;
   min-width: 300px;
   max-height: 200px;
-  /* Change value after i've done the bottom of the card */
-  background-position: bottom;
 }
 .restaurants-container__card--infos {
   color: black;
