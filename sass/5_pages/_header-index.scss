@@ -41,6 +41,9 @@
             display: flex;
             background-color: #F6F6F6;
             border-radius: 25px;
+            box-shadow: 1px 6px 15px -5px rgb(141 133 133 / 48%);
+            -webkit-box-shadow: 2px 1px 10px 1px rgb(148 143 143 / 48%);
+            -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.171);
             position: relative;
             span {
                 text-align: center;
