@@ -37,9 +37,14 @@
         padding: 2.5rem 0 0 1.3rem;
     }
     ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         li {
             margin: 2rem;
             display: flex;
+            max-width: 350px;
+            width: 100%;
             background-color: #F6F6F6;
             border-radius: 25px;
             box-shadow: 1px 6px 15px -5px rgb(141 133 133 / 48%);
@@ -56,7 +61,7 @@
                 width: 25px;
                 position: absolute;
                 top: 1.25rem;
-                left: -.6em;
+                left: -.75em;
             }
             .fas {
                 color: grey;
