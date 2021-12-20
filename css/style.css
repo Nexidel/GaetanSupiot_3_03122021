@@ -3,6 +3,13 @@ body {
   margin: 0;
 }
 
+.container {
+  max-width: 1440px;
+  /* Width Ecran XL */
+  min-width: 470px;
+  margin: auto;
+}
+
 h1,
 h2,
 h3 {
@@ -20,14 +27,13 @@ ul {
   padding: 0;
   list-style: none;
 }
-ul li a {
+
+a {
   text-decoration: none;
 }
 
 img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
+  width: 100%;
 }
 
 .footer-color {
@@ -119,13 +125,16 @@ img {
 }
 
 .navigation h2 {
-  padding: 2.5rem 0 0 1rem;
+  padding: 2.5rem 0 0 1.3rem;
 }
 .navigation ul li {
   margin: 2rem;
   display: flex;
   background-color: #F6F6F6;
   border-radius: 25px;
+  box-shadow: 1px 6px 15px -5px rgba(141, 133, 133, 0.48);
+  -webkit-box-shadow: 2px 1px 10px 1px rgba(148, 143, 143, 0.48);
+  -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.171);
   position: relative;
 }
 .navigation ul li span {
@@ -160,7 +169,52 @@ img {
   background-color: #f6f6f6;
 }
 .restaurants h2 {
-  padding: 2.5rem 0 0 1rem;
+  padding: 2rem 0 0.5rem 0;
+}
+.restaurants-container {
+  padding: 1.3rem;
+}
+.restaurants-container__card {
+  margin: 1.3rem 0 1.3rem 0;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 1px 6px 15px -5px rgba(141, 133, 133, 0.3);
+  -webkit-box-shadow: 2px 1px 10px 1px rgba(148, 143, 143, 0.3);
+  -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.3);
+  position: relative;
+}
+.restaurants-container__card img {
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  min-width: 300px;
+  max-height: 200px;
+  /* Change value after i've done the bottom of the card */
+  background-position: bottom;
+}
+.restaurants-container__card--infos {
+  color: black;
+  padding: 1rem;
+}
+.restaurants-container__card--infos div {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.restaurants-container__card--infos p {
+  margin: 0.4rem 0 0 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.restaurants-container__card i {
+  font-size: 2rem;
+  position: absolute;
+  top: 14rem;
+  right: 2rem;
+}
+.restaurants-container__card .far {
+  color: #8a8888;
+}
+.restaurants-container__card .fas {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
