@@ -1,6 +1,6 @@
 .header-index {
     text-align: center;
-    h1 {
+    & h1 {
         margin: .6rem 0 .2rem 0;
         color: black;
         font-weight: 300;
@@ -14,7 +14,7 @@
             color: rgb(49, 48, 48);
             width: 90%;
             padding: 1rem 0 1rem 0;
-            span {
+            & span {
                 padding: 0 1rem 0 1rem;
             }
         }
@@ -22,25 +22,25 @@
     &__description {
         background-color: $background-light;
         padding: 1.5rem 1.5rem 3rem 1.5rem;
-        p {
+        & p {
             font-size: 1.3rem;
             color: rgba(37, 36, 36, 0.664);
         }
-        button {
+        & button {
             @include pink-btn;
         }
     }
 }
 
 .navigation {
-    h2 {
+    & h2 {
         padding: 2.5rem 0 0 1.3rem;
     }
-    ul {
+    & ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        li {
+        & li {
             margin: 2rem;
             display: flex;
             max-width: 350px;
@@ -51,7 +51,7 @@
             -webkit-box-shadow: 2px 1px 10px 1px rgb(148 143 143 / 48%);
             -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.171);
             position: relative;
-            span {
+            & span {
                 text-align: center;
                 line-height: 25px;
                 color: white;
@@ -63,21 +63,21 @@
                 top: 1.25rem;
                 left: -.75em;
             }
-            .fas {
+            & .fas {
                 color: grey;
             }
-            i {
+            & i {
                 padding: 0 1rem 0 1rem;
                 margin: 1.5rem 1.5rem 1.5rem 2rem;
             }
-            p {
+            & p {
                 margin: 1.5rem 0 1.5rem 0;
                 font-weight: bold;
             }
         }
-        li:hover {
+        & li:hover {
             background-color: rgb(245, 237, 255);
-            .fas {
+            & .fas {
                 color: $primary-color;
             }
         }

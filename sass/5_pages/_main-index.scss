@@ -1,6 +1,6 @@
 .restaurants {
     background-color: $background-light;
-    h2 {
+    & h2 {
         padding: 2rem 0 .5rem 0;
     }
     &-container {
@@ -13,7 +13,7 @@
             -webkit-box-shadow: 2px 1px 10px 1px rgb(148 143 143 / 0.30);
             -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.30);
             position: relative;
-            img {
+            & img {
                 object-fit: cover;
                 border-radius: 1rem 1rem 0 0;
                 min-width: 300px;
@@ -22,26 +22,26 @@
             &--infos {
                 color: black;
                 padding: 1rem;
-                div {
+                & div {
                     font-weight: bolder;
                     font-size: 1.3rem;
                 }
-                p {
+                & p {
                     margin: .4rem 0 0 0;
                     text-decoration: none;
                     font-size: 1.2rem;
                 }
             }
-            i {
+            & i {
                 font-size: 2rem;
                 position: absolute;
                 top: 14rem;
                 right: 2rem;
             }
-            .far {
+            & .far {
                 color: rgb(138, 136, 136);
             }
-            .fas {
+            & .fas {
                 color: $primary-color;
             }
         }
