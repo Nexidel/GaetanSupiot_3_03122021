@@ -1,6 +1,51 @@
 .restaurants {
     background-color: $background-light;
     h2 {
-        padding: 2.5rem 0 0 1rem;
+        padding: 2rem 0 .5rem 0;
+    }
+    &-container {
+        padding: 1.3rem;
+        &__card {
+            margin: 1.3rem 0 1.3rem 0;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 1px 6px 15px -5px rgb(141 133 133 / 0.30);
+            -webkit-box-shadow: 2px 1px 10px 1px rgb(148 143 143 / 0.30);
+            -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.30);
+            position: relative;
+            img {
+                object-fit: cover;
+                border-radius: 1rem 1rem 0 0;
+                min-width: 300px;
+                max-height: 200px;
+                /* Change value after i've done the bottom of the card */
+                background-position: bottom;
+            }
+            &--infos {
+                color: black;
+                padding: 1rem;
+                div {
+                    font-weight: bolder;
+                    font-size: 1.3rem;
+                }
+                p {
+                    margin: .4rem 0 0 0;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                }
+            }
+            i {
+                font-size: 2rem;
+                position: absolute;
+                top: 14rem;
+                right: 2rem;
+            }
+            .far {
+                color: rgb(138, 136, 136);
+            }
+            .fas {
+                color: $primary-color;
+            }
+        }
     }
 }
