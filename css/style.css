@@ -84,36 +84,37 @@ img {
   font-size: 1.2rem;
 }
 
-.header {
+.header-index {
   text-align: center;
 }
-.header h1 {
+.header-index h1 {
+  margin: 0.6rem 0 0.2rem 0;
   color: black;
   font-weight: 300;
   font-size: 2rem;
 }
-.header__location {
+.header-index__location {
   background-color: #eaeaea;
   box-shadow: inset 0 2px #d6d6d6;
 }
-.header__location--text {
+.header-index__location--text {
   font-weight: bold;
   color: #313030;
   width: 90%;
   padding: 1rem 0 1rem 0;
 }
-.header__location--text span {
+.header-index__location--text span {
   padding: 0 1rem 0 1rem;
 }
-.header__description {
+.header-index__description {
   background-color: #f6f6f6;
   padding: 1.5rem 1.5rem 3rem 1.5rem;
 }
-.header__description p {
+.header-index__description p {
   font-size: 1.3rem;
   color: rgba(37, 36, 36, 0.664);
 }
-.header__description button {
+.header-index__description button {
   background: linear-gradient(#FF79DA 0%, #9356DC 100%);
   color: white;
   font-size: 1rem;
