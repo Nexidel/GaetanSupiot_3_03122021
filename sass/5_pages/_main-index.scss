@@ -10,7 +10,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 1.3rem 1.3rem 1.3rem;
+        margin: 0 1.3rem 0 1.3rem;
+        padding-bottom: 2.5rem;
+        @media screen and (min-width: 767px) {
+            margin: 0;
+        }
         & div:hover {
             transition: 0.3s;
             transform: scale(1.015);
@@ -44,21 +48,21 @@
             }
             &--infos {
                 color: black;
-                padding: 1rem;
+                padding: .7rem 0 1rem .8rem;
                 & div {
                     font-weight: bolder;
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                 }
                 & p {
                     margin: .4rem 0 0 0;
                     text-decoration: none;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
             }
             & i {
                 font-size: 2rem;
                 position: absolute;
-                top: 13rem;
+                top: 12.5rem;
                 right: 2rem;
             }
             & .far {
