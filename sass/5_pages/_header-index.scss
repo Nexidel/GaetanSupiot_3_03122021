@@ -40,8 +40,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 1rem 0 3rem 0;
         & li {
-            margin: 2rem;
+            margin: .8rem;
             display: flex;
             max-width: 350px;
             width: 100%;
