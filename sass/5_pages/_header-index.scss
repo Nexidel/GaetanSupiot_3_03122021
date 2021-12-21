@@ -12,10 +12,10 @@
         &--text {
             font-weight: bold;
             color: rgb(49, 48, 48);
-            width: 90%;
             padding: 1rem 0 1rem 0;
-            & span {
-                padding: 0 1rem 0 1rem;
+            & i {
+                position: fixed;
+                /* Laisser en n'imp pour se souvenir de le faire plus tard */
             }
         }
     }
