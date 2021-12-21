@@ -2,6 +2,9 @@
     background-color: $background-light;
     & h2 {
         padding: 2rem 0 .5rem 0;
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
     }
     &-container {
         padding: 1.3rem;
