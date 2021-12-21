@@ -1,17 +1,17 @@
-.footer-color {
+.footer-wrap {
     background-color: rgb(53, 53, 53);
 }
 
 .footer {
+    padding: 1.3rem 0 2rem 1.5rem;
     & h3 {
-        padding: 1.3rem 0 0 1.5rem;
         margin: 0;
         color: white;
         font-weight: normal;
     }
     &__field {
         font-weight: lighter;
-        padding: 1rem 0 2rem 1.5rem;
+        margin-top: 1rem;
         color: rgba(245, 245, 245, 0.842);
         font-size: medium;
         line-height: 1.6rem;
