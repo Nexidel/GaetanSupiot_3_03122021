@@ -5,6 +5,10 @@
     }
     &-container {
         padding: 1.3rem;
+        & div:hover {
+            transition: 0.3s;
+            transform: scale(1.015);
+        }
         &__card {
             margin: 1.3rem 0 1.3rem 0;
             background-color: white;
