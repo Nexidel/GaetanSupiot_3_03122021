@@ -237,7 +237,7 @@ img {
   object-fit: cover;
   object-position: bottom;
   border-radius: 1rem 1rem 0 0;
-  max-height: 180px;
+  height: 160px;
 }
 .restaurants-container__card--infos {
   color: black;
