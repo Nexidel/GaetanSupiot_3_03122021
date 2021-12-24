@@ -237,7 +237,7 @@ img {
   object-fit: cover;
   object-position: bottom;
   border-radius: 1rem 1rem 0 0;
-  height: 160px;
+  height: 200px;
 }
 .restaurants-container__card--infos {
   color: black;
@@ -255,7 +255,7 @@ img {
 .restaurants-container__card i {
   font-size: 2rem;
   position: absolute;
-  top: 12.5rem;
+  top: 13.8rem;
   right: 2rem;
 }
 .restaurants-container__card .far {
