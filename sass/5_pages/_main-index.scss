@@ -21,7 +21,6 @@
         }
         & #imgPosition {
             & img {
-                object-fit: cover;
                 object-position: center;
             }
         }
@@ -41,7 +40,6 @@
             -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.30);
             position: relative;
             & img {
-                object-fit: cover;
                 object-position: bottom;
                 border-radius: 1rem 1rem 0 0;
                 height: 200px;
