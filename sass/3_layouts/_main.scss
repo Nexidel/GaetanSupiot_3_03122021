@@ -1,3 +1,12 @@
-.button {
+.imgCoverNote {
+    background-image: url(../../images/restaurants/LaNoteEnchantee.jpg);
+    height: 230px;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    margin-bottom: -2em;
+}
+
+button {
     @include pink-btn;
 }
