@@ -31,37 +31,7 @@ a {
 
 img {
   width: 100%;
-}
-
-.footer-wrap {
-  background-color: #353535;
-}
-
-.footer {
-  padding: 1.3rem 0 2rem 1.5rem;
-}
-.footer h3 {
-  margin: 0;
-  color: white;
-  font-weight: normal;
-}
-.footer__field {
-  font-weight: lighter;
-  margin-top: 1rem;
-  color: rgba(245, 245, 245, 0.842);
-  font-size: medium;
-  line-height: 1.6rem;
-  list-style: none;
-  text-decoration: none;
-}
-.footer__field i {
-  width: 1.8rem;
-}
-.footer__field--bold {
-  color: white;
-}
-.footer__field a {
-  color: rgba(245, 245, 245, 0.842);
+  object-fit: cover;
 }
 
 .header {
@@ -182,6 +152,25 @@ img {
   color: #9356DC;
 }
 
+.imgCoverNote {
+  background-image: url(../../images/restaurants/LaNoteEnchantee.jpg);
+  height: 230px;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  margin-bottom: -2em;
+}
+
+button {
+  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  color: white;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: none;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.48);
+}
+
 .restaurants {
   background-color: #f6f6f6;
 }
@@ -210,7 +199,6 @@ img {
   transform: scale(1.015);
 }
 .restaurants-container #imgPosition img {
-  object-fit: cover;
   object-position: center;
 }
 .restaurants-container__card {
@@ -234,7 +222,6 @@ img {
   }
 }
 .restaurants-container__card img {
-  object-fit: cover;
   object-position: bottom;
   border-radius: 1rem 1rem 0 0;
   height: 200px;
@@ -252,17 +239,51 @@ img {
   text-decoration: none;
   font-size: 1rem;
 }
-.restaurants-container__card i {
-  font-size: 2rem;
+.restaurants-container__card--favorite {
   position: absolute;
   top: 13.8rem;
   right: 2rem;
+  font-size: 2rem;
 }
-.restaurants-container__card .far {
+.restaurants-container__card--favorite.far {
   color: #8a8888;
 }
-.restaurants-container__card .fas {
+.restaurants-container__card--favorite.fas {
   color: #9356DC;
+}
+.restaurants-container__card--favorite.emptyHeart + label.fas {
+  display: none;
+}
+
+.footer-wrap {
+  background-color: #353535;
+}
+
+.footer {
+  padding: 1.3rem 0 2rem 1.5rem;
+}
+.footer h3 {
+  margin: 0;
+  color: white;
+  font-weight: normal;
+}
+.footer__field {
+  font-weight: lighter;
+  margin-top: 1rem;
+  color: rgba(245, 245, 245, 0.842);
+  font-size: medium;
+  line-height: 1.6rem;
+  list-style: none;
+  text-decoration: none;
+}
+.footer__field i {
+  width: 1.8rem;
+}
+.footer__field--bold {
+  color: white;
+}
+.footer__field a {
+  color: rgba(245, 245, 245, 0.842);
 }
 
 /*# sourceMappingURL=style.css.map */
