@@ -1,74 +1,81 @@
-        .restaurants {
-            background-color: $background-light;
-            & h2 {
-                padding: 3.3rem 0 0.5rem 1.3rem;
-                @media screen and (min-width: 768px) {
-                    text-align: center;
+.restaurants {
+    background-color: $background-light;
+    & h2 {
+        padding: 3.3rem 0 0.5rem 1.3rem;
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
+    }
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 1.3rem 0 1.3rem;
+        padding-bottom: 2.5rem;
+        @media screen and (min-width: 767px) {
+            margin: 0;
+        }
+        & div:hover {
+            transition: 0.3s;
+            transform: scale(1.015);
+        }
+        & #imgPosition {
+            & img {
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &__card {
+            width: 100%;
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                width: 45%;
+            }
+            @media screen and (min-width: 1024px) {
+                width: 22%;
+            }
+            margin: 1.3rem 0 1.3rem 0;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 1px 6px 15px -5px rgb(141 133 133 / 0.30);
+            -webkit-box-shadow: 2px 1px 10px 1px rgb(148 143 143 / 0.30);
+            -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.30);
+            position: relative;
+            & img {
+                object-fit: cover;
+                object-position: bottom;
+                border-radius: 1rem 1rem 0 0;
+                height: 200px;
+            }
+            &--infos {
+                color: black;
+                padding: .7rem 0 1rem .8rem;
+                & div {
+                    font-weight: bolder;
+                    font-size: 1.1rem;
+                }
+                & p {
+                    margin: .4rem 0 0 0;
+                    text-decoration: none;
+                    font-size: 1rem;
                 }
             }
-            &-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                margin: 0 1.3rem 0 1.3rem;
-                padding-bottom: 2.5rem;
-                @media screen and (min-width: 767px) {
-                    margin: 0;
+            &--favorite {
+                position: absolute;
+                top: 13.8rem;
+                right: 2rem;
+                font-size: 2rem;
+                &.far {
+                    color: rgb(138, 136, 136);
                 }
-                & div:hover {
-                    transition: 0.3s;
-                    transform: scale(1.015);
+                &.fas {
+                    color: $primary-color;
                 }
-                & #imgPosition {
-                    & img {
-                        object-fit: cover;
-                        object-position: center;
-                    }
-                }
-                &__card {
-                    width: 100%;
-                    @media screen and (min-width: 768px) and (max-width: 1023px) {
-                        width: 45%;
-                    }
-                    @media screen and (min-width: 1024px) {
-                        width: 22%;
-                    }
-                    margin: 1.3rem 0 1.3rem 0;
-                    background-color: white;
-                    border-radius: 1rem;
-                    box-shadow: 1px 6px 15px -5px rgb(141 133 133 / 0.30);
-                    -webkit-box-shadow: 2px 1px 10px 1px rgb(148 143 143 / 0.30);
-                    -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.30);
-                    position: relative;
-                    & img {
-                        object-fit: cover;
-                        object-position: bottom;
-                        border-radius: 1rem 1rem 0 0;
-                        height: 200px;
-                    }
-                    &--infos {
-                        color: black;
-                        padding: .7rem 0 1rem .8rem;
-                        & div {
-                            font-weight: bolder;
-                            font-size: 1.1rem;
-                        }
-                        & p {
-                            margin: .4rem 0 0 0;
-                            text-decoration: none;
-                            font-size: 1rem;
-                        }
-                    }
-                    &--favorite {
-                        position: absolute;
-                        top: 13.8rem;
-                        right: 2rem;
-                        &.emptyHeart+label {
-                            &.fas {
-                                display: none;
-                            }
-                        }
+                &.emptyHeart+label {
+                    &.fas {
+                        display: none;
                     }
                 }
             }
         }
+    }
+}
