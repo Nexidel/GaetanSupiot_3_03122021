@@ -7,6 +7,26 @@
     margin-bottom: -2em;
 }
 
+.foodChoice {
+    &__card {
+        &--title {
+            & h3 {
+                margin: 2rem 0 0 0;
+            }
+        }
+        &--bloc {
+            margin: 1rem;
+            padding: .5rem .5rem;
+            border: 1px solid black;
+            border-radius: 15px;
+            & div {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
 button {
     @include pink-btn;
 }
