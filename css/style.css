@@ -23,8 +23,7 @@ p {
   margin: 0;
 }
 
-h1,
-h3 {
+h1 {
   font-family: "Shrikhand";
 }
 
@@ -85,11 +84,17 @@ img {
   background-color: #f6f6f6;
   padding: 1.5rem 1.5rem 3rem 1.5rem;
 }
+.header-index__description h2 {
+  margin: 1rem 3rem;
+  font-size: 1.6rem;
+}
 .header-index__description p {
+  margin: 1rem 0 1rem;
   font-size: 1.3rem;
   color: rgba(37, 36, 36, 0.664);
 }
 .header-index__description button {
+  margin: 0.5rem 0 0.5rem;
   background: linear-gradient(#FF79DA 0%, #9356DC 100%);
   color: white;
   font-size: 1rem;
@@ -155,6 +160,10 @@ img {
   color: #9356DC;
 }
 
+.container {
+  background-color: #f6f6f6;
+}
+
 .imgCoverNote {
   background-image: url(../../images/restaurants/LaNoteEnchantee.jpg);
   height: 230px;
@@ -164,12 +173,34 @@ img {
   margin-bottom: -2em;
 }
 
+.foodChoice {
+  margin: 1rem;
+}
+.foodChoice__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0;
+}
+.foodChoice__title h2 {
+  font-family: "Shrikhand";
+  font-style: oblique 40deg;
+  font-weight: normal;
+  font-size: 2rem;
+}
+.foodChoice__title i {
+  font-size: 1.5rem;
+  color: #8a8888;
+}
 .foodChoice__card--title h3 {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 0 0.5rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #5f5959;
 }
 .foodChoice__card--bloc {
-  margin: 1rem;
-  padding: 0.5rem;
+  margin: 1rem 0 1rem;
+  padding: 0.7rem 0.5rem;
   border: 1px solid black;
   border-radius: 15px;
 }
@@ -177,8 +208,18 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
-button {
+.foodChoice__card--bloc p {
+  margin-top: 0.2rem;
+}
+.foodChoice__card--bloc span {
+  padding-right: 0.5rem;
+}
+.foodChoice__button {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 3.5rem;
+}
+.foodChoice__button button {
   background: linear-gradient(#FF79DA 0%, #9356DC 100%);
   color: white;
   font-size: 1rem;
@@ -186,6 +227,7 @@ button {
   border: none;
   padding: 1rem 1.5rem;
   box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.48);
+  padding: 1rem 3.5rem;
 }
 
 .restaurants {
@@ -280,6 +322,7 @@ button {
   padding: 1.3rem 0 2rem 1.5rem;
 }
 .footer h3 {
+  font-family: "Shrikhand";
   margin: 0;
   color: white;
   font-weight: normal;
