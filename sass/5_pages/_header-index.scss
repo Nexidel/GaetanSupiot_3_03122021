@@ -22,11 +22,17 @@
     &__description {
         background-color: $background-light;
         padding: 1.5rem 1.5rem 3rem 1.5rem;
+        & h2 {
+            margin: 1rem 3rem;
+            font-size: 1.6rem;
+        }
         & p {
+            margin: 1rem 0 1rem;
             font-size: 1.3rem;
             color: rgba(37, 36, 36, 0.664);
         }
         & button {
+            margin: .5rem 0 .5rem;
             @include pink-btn;
         }
     }
