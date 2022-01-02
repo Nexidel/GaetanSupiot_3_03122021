@@ -1,12 +1,13 @@
 .header {
     text-align: center;
+    margin-top: 1.2rem;
     &__title {
         position: relative;
     }
     &__icon {
         position: absolute;
-        top: 1.3rem;
-        left: 1rem;
+        top: 2rem;
+        left: 1.5rem;
     }
     & a:visited {
         text-decoration: none;
