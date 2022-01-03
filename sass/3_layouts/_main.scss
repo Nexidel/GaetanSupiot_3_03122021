@@ -1,14 +1,14 @@
-.container {
-    background-color: $background-light;
-}
-
-.imgCoverNote {
+.imgCover {
     background-image: url(../../images/restaurants/LaNoteEnchantee.jpg);
-    height: 230px;
+    height: 290px;
     width: 100%;
     z-index: -1;
-    background-size: cover;
-    margin-bottom: -2em;
+    margin-bottom: -3.5rem;
+}
+
+.container {
+    background-color: $background-light;
+    border-radius: 40px 40px 0 0;
 }
 
 .foodChoice {
@@ -36,6 +36,13 @@
                 text-transform: uppercase;
                 font-weight: lighter;
                 color: rgb(95, 89, 89);
+            }
+            & hr {
+                height: 3px;
+                margin-left: .5rem;
+                width: 12%;
+                background-color: rgb(162, 222, 205);
+                border: none;
             }
         }
         &--bloc {
