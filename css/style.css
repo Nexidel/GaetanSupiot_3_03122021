@@ -161,17 +161,17 @@ img {
   color: #9356DC;
 }
 
-.container {
-  background-color: #f6f6f6;
-}
-
-.imgCoverNote {
+.imgCover {
   background-image: url(../../images/restaurants/LaNoteEnchantee.jpg);
-  height: 230px;
+  height: 290px;
   width: 100%;
   z-index: -1;
-  background-size: cover;
-  margin-bottom: -2em;
+  margin-bottom: -3.5rem;
+}
+
+.container {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
 }
 
 .foodChoice {
@@ -199,12 +199,19 @@ img {
   font-weight: lighter;
   color: #5f5959;
 }
+.foodChoice__card--title hr {
+  height: 3px;
+  margin-left: 0.5rem;
+  width: 12%;
+  background-color: #a2decd;
+  border: none;
+}
 .foodChoice__card--bloc {
   margin: 1rem 0 1rem;
   padding: 0.5rem 0.5rem;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 10px 0px rgba(141, 133, 133, 0.25);
 }
 .foodChoice__card--bloc div {
   display: flex;
