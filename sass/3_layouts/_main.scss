@@ -60,6 +60,18 @@
                 width: 12%;
                 background-color: rgb(162, 222, 205);
                 border: none;
+                @media screen and (min-width: 767px) {
+                    width: 8%;
+                }
+                @media screen and (min-width: 1023px) {
+                    width: 5%;
+                }
+                @media screen and (min-width: 1439px) {
+                    width: 4%;
+                }
+                @media screen and (min-width: 2000px) {
+                    width: 2%;
+                }
             }
         }
         &--bloc {
