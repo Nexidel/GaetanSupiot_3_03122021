@@ -8,8 +8,8 @@ body {
 }
 
 h1 {
-  padding: 0;
-  margin: 0.6rem 0 0.2rem 0;
+  margin: 0;
+  padding: 0.6rem 0 0.2rem 0;
   color: black;
   font-weight: 300;
   font-size: 2rem;
@@ -44,7 +44,7 @@ img {
 
 .header {
   text-align: center;
-  margin-top: 1.2rem;
+  margin-top: 0.5rem;
 }
 .header__title {
   position: relative;
@@ -185,9 +185,10 @@ img {
   background-size: cover;
 }
 
-.container {
+.container-page {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  padding-top: 0.3rem;
 }
 
 .foodChoice {
