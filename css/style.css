@@ -223,6 +223,26 @@ img {
   background-color: #a2decd;
   border: none;
 }
+@media screen and (min-width: 767px) {
+  .foodChoice__card--title hr {
+    width: 8%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .foodChoice__card--title hr {
+    width: 5%;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .foodChoice__card--title hr {
+    width: 4%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .foodChoice__card--title hr {
+    width: 2%;
+  }
+}
 .foodChoice__card--bloc {
   margin: 1rem 0 1rem;
   padding: 0.5rem 0.5rem;
@@ -274,11 +294,6 @@ img {
   justify-content: space-around;
   margin: 0 1.3rem 0 1.3rem;
   padding-bottom: 2.5rem;
-}
-@media screen and (min-width: 767px) {
-  .restaurants-container {
-    margin: 0;
-  }
 }
 .restaurants-container div:hover {
   transition: 0.3s;
@@ -346,22 +361,35 @@ img {
 }
 
 .footer {
-  padding: 1.3rem 0 2rem 1.5rem;
+  padding: 1.3rem 0 2rem 0;
 }
 .footer h3 {
   font-family: "Shrikhand";
+  padding-left: 1.5rem;
   margin: 0;
   color: white;
   font-weight: normal;
 }
 .footer__field {
   font-weight: lighter;
+  padding-left: 1.5rem;
   margin-top: 1rem;
   color: rgba(245, 245, 245, 0.842);
   font-size: medium;
   line-height: 1.6rem;
   list-style: none;
   text-decoration: none;
+}
+@media screen and (min-width: 767px) {
+  .footer__field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    /* & li {
+        width: 50%;
+    } */
+  }
 }
 .footer__field i {
   width: 1.8rem;
