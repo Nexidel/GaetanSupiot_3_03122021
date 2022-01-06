@@ -1,9 +1,25 @@
+.delice {
+    background-image: url(../../images/restaurants/LeDeliceDesSens.jpg);
+}
+
+.palette {
+    background-image: url(../images/restaurants/LaPaletteDuGout.jpg);
+}
+
+.francaise {
+    background-image: url(../images/restaurants/ALaFrancaise.jpg);
+}
+
+.noteEnchantee {
+    background-image: url(../images/restaurants/LaNoteEnchantee.jpg);
+    background-position: center;
+}
+
 .imgCover {
-    background-image: url(../../images/restaurants/LaNoteEnchantee.jpg);
     height: 290px;
     width: 100%;
-    z-index: -1;
     margin-bottom: -3.5rem;
+    background-size: cover;
 }
 
 .container {
