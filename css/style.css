@@ -44,14 +44,13 @@ img {
 
 .header {
   text-align: center;
-  margin-top: 0.5rem;
 }
 .header__title {
   position: relative;
 }
 .header__icon {
   position: absolute;
-  top: 2rem;
+  top: 1.3rem;
   left: 1.5rem;
 }
 .header a:visited {
@@ -210,6 +209,11 @@ img {
   font-size: 1.5rem;
   color: #8a8888;
 }
+@media screen and (min-width: 1023) {
+  .foodChoice__card {
+    width: 40%;
+  }
+}
 .foodChoice__card--title h3 {
   margin: 2rem 0 0 0.5rem;
   text-transform: uppercase;
@@ -243,21 +247,21 @@ img {
     width: 2%;
   }
 }
-.foodChoice__card--bloc {
+.foodChoice__card--bloc > div {
   margin: 1rem 0 1rem;
   padding: 0.5rem 0.5rem;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(141, 133, 133, 0.25);
 }
-.foodChoice__card--bloc div {
+.foodChoice__card--bloc > div div {
   display: flex;
   justify-content: space-between;
 }
-.foodChoice__card--bloc p {
+.foodChoice__card--bloc > div p {
   margin-top: 0.2rem;
 }
-.foodChoice__card--bloc span {
+.foodChoice__card--bloc > div span {
   padding-right: 0.5rem;
   font-weight: bold;
 }
@@ -370,6 +374,12 @@ img {
   color: white;
   font-weight: normal;
 }
+@media screen and (min-width: 1023px) {
+  .footer {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 .footer__field {
   font-weight: lighter;
   padding-left: 1.5rem;
@@ -386,9 +396,11 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
-    /* & li {
-        width: 50%;
-    } */
+  }
+}
+@media screen and (min-width: 1023px) {
+  .footer__field {
+    width: 100%;
   }
 }
 .footer__field i {
