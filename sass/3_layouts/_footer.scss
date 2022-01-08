@@ -11,6 +11,10 @@
         color: white;
         font-weight: normal;
     }
+    @media screen and (min-width: 1023px) {
+        display: flex;
+        align-items: flex-end;
+    }
     &__field {
         font-weight: lighter;
         padding-left: 1.5rem;
@@ -25,9 +29,9 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 0;
-            /* & li {
-                width: 50%;
-            } */
+        }
+        @media screen and (min-width: 1023px) {
+            width: 100%;
         }
         & i {
             width: 1.8rem;
