@@ -79,15 +79,14 @@
         }
         &--bloc {
             .menu {
-                margin: 1rem 0 1rem;
+                margin: 2rem 0 0 0;
                 padding: .5rem .5rem;
                 border-radius: 15px;
                 background-color: white;
                 box-shadow: 0px 0px 10px 0px rgb(141 133 133 / 25%);
                 position: relative;
                 overflow: hidden;
-                margin-top: -20px;
-                animation: fade 1s forwards;
+                opacity: 0;
                 div {
                     display: flex;
                     justify-content: space-between;
@@ -117,6 +116,18 @@
                         color: white;
                     }
                 }
+            }
+            .displayFirst {
+                animation: fade 1s forwards;
+            }
+            .displaySecond {
+                animation: fade 1s forwards 0.3s;
+            }
+            .displayThird {
+                animation: fade 1s forwards 0.6s;
+            }
+            .displayForth {
+                animation: fade 1s forwards 0.9s;
             }
             .menu:hover .menu__animation-Check {
                 transform: translateX(-100%);
@@ -152,15 +163,12 @@
     0% {
         opacity: 0;
     }
+    66% {
+        opacity: 0.5;
+    }
     100% {
         top: 0;
         opacity: 1;
-        margin-top: 0px;
+        margin-top: 1rem;
     }
 }
-
-
-/* Faire animation 33% opacity 1 et a 100% la position top 0 */
-
-
-/* Faire margin-bot au lieu de margin-top */
