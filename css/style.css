@@ -303,9 +303,6 @@ img {
     width: 2%;
   }
 }
-.foodChoice__card--bloc {
-  animation: fade 2s;
-}
 .foodChoice__card--bloc .menu {
   margin: 1rem 0 1rem;
   padding: 0.5rem 0.5rem;
@@ -313,7 +310,9 @@ img {
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(141, 133, 133, 0.25);
   position: relative;
-  /* top: 5px; */
+  overflow: hidden;
+  margin-top: -20px;
+  animation: fade 1s forwards;
 }
 .foodChoice__card--bloc .menu div {
   display: flex;
@@ -330,14 +329,15 @@ img {
   display: none;
   position: absolute;
   align-items: center;
-  padding: 13px 20px 13px;
+  padding: 15px 20px 15px;
   border-radius: 0 15px 15px 0;
   background-color: transparent;
   height: 2rem;
   transition: 0.5s;
-  right: -63px;
+  right: -65px;
   top: 0px;
   z-index: 2;
+  border: 1px solid #99E2D0;
 }
 .foodChoice__card--bloc .menu__animation-Check i {
   font-size: 23px;
@@ -381,8 +381,11 @@ img {
   100% {
     top: 0;
     opacity: 1;
+    margin-top: 0px;
   }
 }
+/* Faire animation 33% opacity 1 et a 100% la position top 0 */
+/* Faire margin-bot au lieu de margin-top */
 .restaurants {
   background-color: #f6f6f6;
 }

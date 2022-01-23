@@ -78,7 +78,6 @@
             }
         }
         &--bloc {
-            animation: fade 1s;
             .menu {
                 margin: 1rem 0 1rem;
                 padding: .5rem .5rem;
@@ -86,15 +85,17 @@
                 background-color: white;
                 box-shadow: 0px 0px 10px 0px rgb(141 133 133 / 25%);
                 position: relative;
-                /* top: 5px; */
-                & div {
+                overflow: hidden;
+                margin-top: -20px;
+                animation: fade 1s forwards;
+                div {
                     display: flex;
                     justify-content: space-between;
                 }
-                & p {
+                p {
                     margin-top: .2rem;
                 }
-                & span {
+                span {
                     padding-right: .5rem;
                     font-weight: bold;
                 }
@@ -102,14 +103,15 @@
                     display: none;
                     position: absolute;
                     align-items: center;
-                    padding: 13px 20px 13px;
+                    padding: 15px 20px 15px;
                     border-radius: 0 15px 15px 0;
                     background-color: transparent;
                     height: 2rem;
                     transition: 0.5s;
-                    right: -63px;
+                    right: -65px;
                     top: 0px;
                     z-index: 2;
+                    border: 1px solid $tertiary-color;
                     & i {
                         font-size: 23px;
                         color: white;
@@ -153,8 +155,12 @@
     100% {
         top: 0;
         opacity: 1;
+        margin-top: 0px;
     }
 }
 
 
-/* Faire animaation 33% opacity 1 et a 100% la position top 0 */
+/* Faire animation 33% opacity 1 et a 100% la position top 0 */
+
+
+/* Faire margin-bot au lieu de margin-top */
