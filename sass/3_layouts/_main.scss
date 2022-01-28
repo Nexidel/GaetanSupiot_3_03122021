@@ -33,24 +33,35 @@
     &__title {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 1rem 1rem 0;
-        position: relative;
+        justify-content: space-around;
+        padding: 1rem 0 0 0;
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
         h2 {
             font-family: "Shrikhand";
             font-style: oblique 40deg;
             font-weight: normal;
-            font-size: 2rem;
+            font-size: 1.8rem;
+            margin-right: .5rem;
+            @media screen and (min-width: 767px) {
+                margin-right: 1rem;
+                font-size: 2rem;
+            }
         }
         &--favorite {
-            position: absolute;
-            right: 15px;
             font-size: 2rem;
         }
     }
     &__card {
-        @media screen and (min-width: 1023) {
+        @media screen and (min-width: 1023px) {
             width: 40%;
+        }
+        @media screen and (min-width: 1439px) {
+            width: 30%;
+        }
+        @media screen and (min-width: 2559px) {
+            width: 25%;
         }
         &--title {
             h3 {
@@ -62,21 +73,9 @@
             hr {
                 height: 3px;
                 margin-left: .5rem;
-                width: 12%;
+                width: 15%;
                 background-color: rgb(162, 222, 205);
                 border: none;
-                @media screen and (min-width: 767px) {
-                    width: 8%;
-                }
-                @media screen and (min-width: 1023px) {
-                    width: 5%;
-                }
-                @media screen and (min-width: 1439px) {
-                    width: 4%;
-                }
-                @media screen and (min-width: 2000px) {
-                    width: 2%;
-                }
             }
         }
         &--bloc {
@@ -148,6 +147,21 @@
             @include pink-btn;
             padding: 1rem 3.5rem;
         }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .restaurant-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .restaurant-container {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
