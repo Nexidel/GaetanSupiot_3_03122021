@@ -42,6 +42,32 @@ img {
   object-fit: cover;
 }
 
+.colored {
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heartColored {
+  display: none;
+}
+
+.heartEmpty {
+  color: #8a8888;
+}
+
+.heart {
+  display: none;
+}
+
+.heart:checked ~ .heartColored {
+  display: inline-block;
+}
+
+.heart:checked ~ .heartEmpty {
+  display: none;
+}
+
 .loader {
   width: 100%;
   height: 100%;
@@ -254,6 +280,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem 0;
+  position: relative;
 }
 .foodChoice__title h2 {
   font-family: "Shrikhand";
@@ -261,9 +288,10 @@ img {
   font-weight: normal;
   font-size: 2rem;
 }
-.foodChoice__title i {
-  font-size: 1.5rem;
-  color: #8a8888;
+.foodChoice__title--favorite {
+  position: absolute;
+  right: 15px;
+  font-size: 2rem;
 }
 @media screen and (min-width: 1023) {
   .foodChoice__card {
@@ -304,15 +332,14 @@ img {
   }
 }
 .foodChoice__card--bloc .menu {
-  margin: 1rem 0 1rem;
+  margin: 2rem 0 0 0;
   padding: 0.5rem 0.5rem;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(141, 133, 133, 0.25);
   position: relative;
   overflow: hidden;
-  margin-top: -20px;
-  animation: fade 1s forwards;
+  opacity: 0;
 }
 .foodChoice__card--bloc .menu div {
   display: flex;
@@ -342,6 +369,18 @@ img {
 .foodChoice__card--bloc .menu__animation-Check i {
   font-size: 23px;
   color: white;
+}
+.foodChoice__card--bloc .displayFirst {
+  animation: fade 0.8s forwards;
+}
+.foodChoice__card--bloc .displaySecond {
+  animation: fade 0.8s forwards 0.2s;
+}
+.foodChoice__card--bloc .displayThird {
+  animation: fade 0.8s forwards 0.4s;
+}
+.foodChoice__card--bloc .displayForth {
+  animation: fade 0.8s forwards 0.6s;
 }
 .foodChoice__card--bloc .menu:hover .menu__animation-Check {
   transform: translateX(-100%);
@@ -381,11 +420,9 @@ img {
   100% {
     top: 0;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: 1rem;
   }
 }
-/* Faire animation 33% opacity 1 et a 100% la position top 0 */
-/* Faire margin-bot au lieu de margin-top */
 .restaurants {
   background-color: #f6f6f6;
 }
@@ -454,15 +491,6 @@ img {
   top: 13.8rem;
   right: 2rem;
   font-size: 2rem;
-}
-.restaurants-container__card--favorite.far {
-  color: #8a8888;
-}
-.restaurants-container__card--favorite.fas {
-  color: #9356DC;
-}
-.restaurants-container__card--favorite.emptyHeart + label.fas {
-  display: none;
 }
 
 .footer-wrap {
