@@ -59,17 +59,6 @@
                 top: 13.8rem;
                 right: 2rem;
                 font-size: 2rem;
-                &.far {
-                    color: $greyHeart;
-                }
-                &.fas {
-                    color: $primary-color;
-                }
-                &.emptyHeart+label {
-                    &.fas {
-                        display: none;
-                    }
-                }
             }
         }
     }

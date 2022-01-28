@@ -41,3 +41,29 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+.colored {
+    background: linear-gradient( 0deg, $secondary-color 0%, $primary-color 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heartColored {
+    display: none;
+}
+
+.heartEmpty {
+    color: $greyHeart;
+}
+
+.heart {
+    display: none;
+}
+
+.heart:checked~.heartColored {
+    display: inline-block;
+}
+
+.heart:checked~.heartEmpty {
+    display: none;
+}
