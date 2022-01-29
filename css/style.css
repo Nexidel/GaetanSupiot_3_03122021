@@ -197,7 +197,7 @@ img {
 .navigation ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 1rem 0 3rem 0;
 }
 .navigation ul li {
@@ -278,24 +278,51 @@ img {
 .foodChoice__title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1rem 0;
-  position: relative;
+  justify-content: space-around;
+  padding: 1rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .foodChoice__title {
+    justify-content: center;
+  }
 }
 .foodChoice__title h2 {
   font-family: "Shrikhand";
   font-style: oblique 40deg;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 767px) {
+  .foodChoice__title h2 {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
 }
 .foodChoice__title--favorite {
-  position: absolute;
-  right: 15px;
   font-size: 2rem;
 }
-@media screen and (min-width: 1023) {
+.foodChoice__card {
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .foodChoice__card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1023px) {
   .foodChoice__card {
     width: 40%;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .foodChoice__card {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 2559px) {
+  .foodChoice__card {
+    width: 25%;
   }
 }
 .foodChoice__card--title h3 {
@@ -307,29 +334,9 @@ img {
 .foodChoice__card--title hr {
   height: 3px;
   margin-left: 0.5rem;
-  width: 12%;
+  width: 15%;
   background-color: #a2decd;
   border: none;
-}
-@media screen and (min-width: 767px) {
-  .foodChoice__card--title hr {
-    width: 8%;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .foodChoice__card--title hr {
-    width: 5%;
-  }
-}
-@media screen and (min-width: 1439px) {
-  .foodChoice__card--title hr {
-    width: 4%;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .foodChoice__card--title hr {
-    width: 2%;
-  }
 }
 .foodChoice__card--bloc .menu {
   margin: 2rem 0 0 0;
@@ -405,6 +412,19 @@ img {
   padding: 1rem 3.5rem;
 }
 
+@media screen and (min-width: 767px) {
+  .restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -489,7 +509,7 @@ img {
 .restaurants-container__card--favorite {
   position: absolute;
   top: 13.8rem;
-  right: 2rem;
+  right: 1rem;
   font-size: 2rem;
 }
 
