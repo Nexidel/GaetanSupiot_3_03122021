@@ -60,6 +60,12 @@
                 right: 1rem;
                 font-size: 2rem;
             }
+            .new-restaurant {
+                position: absolute;
+                top: .8rem;
+                right: .7rem;
+                @include new-badge;
+            }
         }
     }
 }

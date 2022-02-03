@@ -1,0 +1,10 @@
+@mixin new-badge {
+    text-align: center;
+    padding: .5rem .8rem;
+    background-color: $tertiary-color;
+    color: rgb(62, 135, 107);
+    position: absolute;
+    font-weight: 700;
+    font-size: .9rem;
+    border-radius: 3px;
+}
