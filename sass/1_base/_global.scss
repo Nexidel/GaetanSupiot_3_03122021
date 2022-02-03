@@ -48,12 +48,14 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.heartColored {
-    display: none;
-}
-
 .heartEmpty {
     color: $greyHeart;
+    cursor: pointer;
+}
+
+.heartColored {
+    display: none;
+    cursor: pointer;
 }
 
 .heart {
@@ -61,9 +63,19 @@ img {
 }
 
 .heart:checked~.heartColored {
-    display: inline-block;
+    display: block;
+    animation: favApparition 1.5s;
 }
 
 .heart:checked~.heartEmpty {
     display: none;
+}
+
+@keyframes favApparition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
