@@ -48,12 +48,14 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-.heartColored {
-  display: none;
-}
-
 .heartEmpty {
   color: #8a8888;
+  cursor: pointer;
+}
+
+.heartColored {
+  display: none;
+  cursor: pointer;
 }
 
 .heart {
@@ -61,13 +63,22 @@ img {
 }
 
 .heart:checked ~ .heartColored {
-  display: inline-block;
+  display: block;
+  animation: favApparition 1.5s;
 }
 
 .heart:checked ~ .heartEmpty {
   display: none;
 }
 
+@keyframes favApparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader {
   width: 100%;
   height: 100%;
@@ -461,7 +472,7 @@ img {
   margin: 0 1.3rem 0 1.3rem;
   padding-bottom: 2.5rem;
 }
-.restaurants-container div:hover {
+.restaurants-container > div:hover {
   transition: 0.3s;
   transform: scale(1.015);
 }
