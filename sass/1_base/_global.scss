@@ -44,7 +44,7 @@ img {
 
 .colored {
     background: linear-gradient( 0deg, $secondary-color 0%, $primary-color 85%);
-    -webkit-background-clip: text;
+    // -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
