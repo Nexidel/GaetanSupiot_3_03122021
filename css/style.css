@@ -44,7 +44,6 @@ img {
 
 .colored {
   background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -195,6 +194,11 @@ img {
   border: none;
   padding: 1rem 1.5rem;
   box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.48);
+  cursor: pointer;
+}
+.header-index__description button:hover {
+  box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.95);
+  filter: brightness(1.05);
 }
 
 .navigation h2 {
@@ -420,7 +424,12 @@ img {
   border: none;
   padding: 1rem 1.5rem;
   box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.48);
+  cursor: pointer;
   padding: 1rem 3.5rem;
+}
+.foodChoice__button button:hover {
+  box-shadow: 2px 5px 10px 1px rgba(141, 133, 133, 0.95);
+  filter: brightness(1.05);
 }
 
 @media screen and (min-width: 767px) {
