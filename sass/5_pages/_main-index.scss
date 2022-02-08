@@ -2,16 +2,19 @@
     background-color: $background-light;
     & h2 {
         padding: 3.3rem 0 0.5rem 1.3rem;
+        // h2 in the center of the screen for desktop and Tablet
         @media screen and (min-width: 768px) {
             text-align: center;
         }
     }
     &-container {
+        // Flexbox to display automatically when change screen size
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 1.3rem 0 1.3rem;
         padding-bottom: 2.5rem;
+        // On the direct child div of the element, this div grow a bit bigger
         &>div:hover {
             transition: 0.3s;
             transform: scale(1.015);
@@ -22,6 +25,7 @@
             }
         }
         &__card {
+            // Diffrent size for each device
             width: 100%;
             @media screen and (min-width: 768px) and (max-width: 1023px) {
                 width: 45%;
@@ -37,7 +41,7 @@
             -moz-box-shadow: 2px 1px 10px 1px rgba(146, 142, 142, 0.30);
             position: relative;
             & img {
-                object-position: bottom;
+                object-position: bottom; // Position of the images
                 border-radius: 1rem 1rem 0 0;
                 height: 200px;
             }
@@ -55,15 +59,18 @@
                 }
             }
             &--favorite {
+                // Position the favorite icon (heart) at the bottom right of the card 
                 position: absolute;
                 top: 13.8rem;
                 right: 1rem;
                 font-size: 2rem;
             }
             .new-restaurant {
+                // Position the component 'new-badge' at the top right of the card
                 position: absolute;
                 top: .8rem;
                 right: .7rem;
+                // Call the component 'new-badge'
                 @include new-badge;
             }
         }

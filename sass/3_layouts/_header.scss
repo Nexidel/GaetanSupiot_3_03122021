@@ -1,14 +1,17 @@
 .header {
+    // Title page at the center of the page
     text-align: center;
     &__title {
         position: relative;
     }
     &__icon {
+        // Position 'back' icon to the left of the title
         position: absolute;
         top: 1.3rem;
         left: 1.5rem;
     }
     & a:visited {
+        // No decoration | Force color black for all the times
         text-decoration: none;
         color: black;
     }

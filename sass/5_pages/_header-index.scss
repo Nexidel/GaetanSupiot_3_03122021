@@ -1,4 +1,5 @@
 .header-index {
+    // Title page at the center of the page
     text-align: center;
     &__location {
         background-color: rgb(234, 234, 234);
@@ -8,15 +9,12 @@
                 position: relative;
             }
             & i {
-                position: absolute;
+                // Position absolute so the 'align-center' is applying only to the span
                 left: -1.9rem;
             }
             font-weight: bold;
             color: rgb(49, 48, 48);
             padding: 1rem 0 1rem 0;
-            // & i {
-            //  Laisser en n'imp pour se souvenir de le faire plus tard
-            // }
         }
     }
     &__description {
@@ -33,6 +31,7 @@
         }
         & button {
             margin: .5rem 0 .5rem;
+            // Call the component 'pink-btn'
             @include pink-btn;
         }
     }
@@ -41,11 +40,15 @@
 .navigation {
     & h2 {
         padding: 2.5rem 0 0 1.3rem;
+        // h2 in the center of the screen for Tablet & Desktop
         @media screen and (min-width: 768px) {
             text-align: center;
         }
     }
     & ul {
+        // Elements of the ul positions itself thanks to flexbox
+        // Smartphone : one below another
+        // Tablet/Desktop : In the same line or the element wich come out of the screen go below the others
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -86,6 +89,7 @@
             }
         }
         & li:hover {
+            // On hover, change color for each li
             background-color: rgb(245, 237, 255);
             & .fas {
                 color: $primary-color;

@@ -1,17 +1,22 @@
 .loader {
+    // width/height 100% for the animation background
+    // take all the screen in all device
     width: 100%;
     height: 100%;
+    // lower z-index than the 'circle' to display circle in front of the background
     z-index: -1;
     position: fixed;
-    animation-duration: 1s;
-    animation-name: loader;
+    animation-duration: 1s; // Animation duration
+    animation-name: loader; // Call the animation by it's name
     &__item {
         position: relative;
         width: 100%;
         height: 100%;
+        // flexbox to the item in the center of the screen
         display: flex;
         align-items: center;
         justify-content: center;
+        // -----------------------
         &--circle {
             position: fixed;
             width: 120px;
@@ -19,9 +24,9 @@
             border-radius: 50%;
             border: 10px solid white;
             border-bottom-color: transparent;
-            animation-duration: 3s;
-            animation-name: circle;
-            animation-timing-function: linear;
+            animation-duration: 3s; // Animation duration
+            animation-name: circle; // Call the animation by it's name
+            animation-timing-function: linear; // No acceleration for the animation, all the time the same physics
             visibility: hidden;
         }
     }
@@ -38,20 +43,20 @@
     }
     100% {
         z-index: -1;
-        visibility: hidden;
+        visibility: hidden; // Hide circle at the end of the animation
     }
 }
 
 @keyframes loader {
     0% {
         background-color: $primary-color;
-        z-index: 2;
+        z-index: 2; // Higher z-index to display it in front of the rest
     }
     99% {
         z-index: 2;
         background-color: $primary-color;
     }
     100% {
-        z-index: -1;
+        z-index: -1; // Lower z-index to not display it in front of the rest
     }
 }

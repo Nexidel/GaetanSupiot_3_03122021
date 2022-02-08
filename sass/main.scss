@@ -1,8 +1,14 @@
+// Call every sass files '.scss'
+// The order is important, that's why i put _variables.scss before _global.scss
+// because i use some variables in the _global.scss
 @import "2_utils/variables";
 @import "1_base/global";
 @import "4_components/spinner";
 @import "4_components/pink-btn";
 @import "4_components/new-badge";
+
+// At this point, everything that can be used in a page is already loaded 
+// so the order do not matter anymore
 @import "3_layouts/header";
 @import "5_pages/header-index";
 @import "3_layouts/main";
