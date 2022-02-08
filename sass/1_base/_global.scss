@@ -47,13 +47,12 @@ img {
     background: linear-gradient( 0deg, $secondary-color 0%, $primary-color 85%);
     // Color only the heart and not the entire element
     // Visual Code indicate an error but it's the only solution
-    // I find to color the icon (heart)
+    // I found to color the icon (heart)
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 // ----- Click label favorite/unfavorite + Animation for favorite -----
-
 .heartEmpty {
     color: $greyHeart;
     cursor: pointer;
